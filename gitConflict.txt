@@ -1,0 +1,15 @@
+<========================================>GIT CONFLICT<========================================>
+
+1. Trường hợp xảy ra xung đột: 
+
+- Khi nhiều developer mà cùng chỉnh sửa ở cùng một dùng code thì khả năng bị conflict khi merge là vô cùng cao
+
+2. Giải pháp:
+
+- Công cụ hỗ trợ: Dùng git mergetool hoặc tích hợp sẵn trong IDE
+- Xem và chỉnh sửa thủ công: Mở file có xung đột, loại bỏ các phần được đánh dấu <<<<, ====, >>>>
+- Kiểm tra lại: Sau khi xử lý, chạy lại lệnh git status và git diff để xác nhận
+
+3. Lưu ý: 
+
+- Luôn backup hoặc tạo branch riêng trước khi xử lý xung đột phức tạp.

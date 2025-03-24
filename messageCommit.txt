@@ -1,0 +1,36 @@
+<========================================>CẤU CHÚC COMMIT MESSAGE CHUẨN<========================================>
+
+1. Cấu trúc commit message: 
+
+- Cấu trúc chung của một commit message theo conventional có dạng:
+
+  <type>[optional scope]: <description>
+
+  [optional body]
+
+  [optional footer]
+
+- Trong đó: 
+
+  + Các thành phần type, description là bắc buộc cần có trong commit mesage, optional là tùy chọn, có hoặc không cũng được
+  + type: từ khóa để phân biệt loại commit là feature, fix bug, reafactor,...
+  + scope: cùng được dùng để phân loại commit, nhưng trả lời câu hỏi: commit này refactor hay fix cái gì? được đặt trong cặp ngoặc đơn ngay sau type
+  + description: là mô tả ngắn về những gì sẽ bị sửa đổi trong commit đấy
+  + body: là mô tả dài và chi tiết hơn, cần thiết khi description chưa thể nói rõ hết được.
+  + footer: một số thông tin mở rộng như số ID của pull request, issue.. được quy định theo conventional.
+
+2. Một số type phổ biến: 
+  + feat: thêm một feature
+  + fix: fix bug cho hệ thống
+  + refactor: sửa code nhưng không fix bug cũng không thêm feature hoặc đôi khi bug cũng được fix từ việc refactor
+  + docs: thêm/thay đổi document
+  + chore: những sửa đổi nhỏ nhặt không liên quan tới code
+  + style: những thay đổi không làm thay đổi ý nghĩa của code như thay đổi css/ui chẳng hạn
+  + perf: code cải tiến về mặt hiệu năng xử lý
+  + vendor: cập nhật version cho các dependencies, packages
+
+3. Một vài ví dụ về 1 commit message chuẩn: 
+
+- git commit -m "feat: implement multi-languages"
+- git commit -m "fix: homepage's bug"
+- git commit -m "fix(player): uiza player can not initialize"

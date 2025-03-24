@@ -1,0 +1,35 @@
+<========================================>CÁC LỆNH GIT CƠ BẢN<========================================>
+
+- git init: Lệnh tạo 1 repo mới 
+- git clone: Lệnh sao chép 1 repo (từ GitHub / GitLab) 
+- git add: Lệnh thêm file vào staging
+- git commit:  Lệnh tạo 1 commit
+- git push:  Lệnh đẩy commit lên remote
+- git pull: Cập nhật từ remote 
+- git branch: Lệnh quản lý nhánh
+- git checkout: Lệnh để chuyển nhánh  
+- git merge: Lệnh để hợp  nhất nhánh
+- git status: Lệnh xem trạng thái 
+- git log: Lệnh xem lịch sử commit
+
+Ví dụ: 
+
+- Tạo và đồng bộ repo:
+
+git init, git clone
+
+- Ghi nhận thay đổi:
+
+git add ., git commit -m "feat: thêm tính năng X"
+
+- Quản lý nhánh:
+
+git branch, git checkout -b feature/ten-tinh-nang
+
+- Đồng bộ với remote:
+
+git push origin <branch>, git pull
+
+- Xem trạng thái & lịch sử:
+
+git status, git log, git diff
